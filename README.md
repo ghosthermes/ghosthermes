@@ -1,33 +1,37 @@
-# Ghost Hermes
-**Vulnerability Researcher | APIs & Web Security**
-Remote, USA | [Bugcrowd](https://bugcrowd.com/h/Liz_Zelda) | ravenfritz98@gmail.com
+# Ghost Hermes (Legal Name Raven Fritz)
+**Technical Generalist & QA Automation**
+Eugene, OR (Remote) | [Bugcrowd](https://bugcrowd.com/h/Liz_Zelda) | ravenfritz98@gmail.com
 
-I hunt for the logic errors that automated scanners miss.
+I read code, isolate failures, and build the glue that makes systems work. 
 
-My background isn't in high-volume automation or "point-and-click" pentesting. I specialize in black-box web and API assessments where the vulnerabilities aren't obvious. To date, I’ve submitted over 15 vetted reports to programs on HackenProof, Bugcrowd, and Immunefi. Most were accepted; all were verified manually.
-
-I work in the terminal. My environment is Arch Linux, usually with Burp Suite and a browser on one screen and Python/CLI tools on the other. I use LLMs to parse massive API schemas or deobfuscate dense JS chunks to find patterns, but I never trust their output. I verify every lead by hand.
+My background is in black-box vulnerability research and independent IT escalation. I don't write enterprise software from a blank screen. I specialize in rapid prototyping, using AI to scaffold scripts and automation tools, then manually hardening the logic. I am the person who reviews the stack trace, finds the exact line of Python or Rust causing the crash, and engineers the fix.
 
 ---
 
-### Selected Vulnerability Case Studies
+### Professional Experience
 
-These findings are redacted to honor NDAs, but they represent my typical focus areas:
+**Independent Vulnerability Researcher**
+*Remote | Bugcrowd, HackenProof, Immunefi (2022–Present)*
+I hunt for the logic errors that automated scanners miss. To date, I’ve submitted over 15 vetted reports across major platforms. 
+* Bypassed authentication on a production banking gateway by injecting custom headers, successfully pulling internal logs and ops data.
+* Exploited inconsistent error codes in an automotive tech API to leak state data.
+* Built custom recon loops using `ffuf`, `gau`, and Bash to map obscure endpoints. 
+* Dumped massive API schemas into LLMs for pattern recognition, then manually verified every lead to filter out hallucinations.
 
-*   **Financial Services:** Found an authentication bypass on a production gateway. By injecting specific headers, I pulled internal logs containing employee usernames and operational data. It was confirmed as an out-of-scope finding, but the client patched it immediately.
-*   **SaaS Infrastructure:** Identified an unpatched SAP Open Redirect (CVE-2020-26836). It was eventually marked as a duplicate, but the discovery validated my methodology for testing enterprise-grade stacks.
-*   **Automotive Tech:** Exploited inconsistent error codes to leak state data (valid vs. invalid accounts). This was triaged as Informational—a common result for "real but low-priority" logic flaws.
-*   **Decentralized Finance (DeFi):** Investigated identity canister certificate anomalies. I spent 48 hours mapping the edge case, though the program ultimately dismissed the report. 
+**IT Support Contractor**
+*Remote | Upwork (2021–2024)*
+Provided remote infrastructure support and security auditing for a portfolio of small business clients. 
+* Conducted website security audits to identify unpatched vulnerabilities and access control flaws.
+* Handled troubleshooting across Windows and Linux environments.
+* Locked down client infrastructure through manual system hardening and user access audits.
+* Wrote custom Python scripts to automate repetitive maintenance tasks across the client portfolio.
 
-I don’t hunt for six-figure bounties. I hunt for the "this shouldn't be public" moments that compromise a company’s integrity.
-
----
-
-### Technical Workflow
-
-I build my own recon loops using `ffuf`, `gau`, and `katana`. When a target requires something unique, I don't wait for a vendor update. I write custom PoCs in Python or Bash to prove a vulnerability is exploitable and reproducible.
-
-My approach to AI is pragmatic. I use it to generate boilerplate or scaffold complex tools, then I manually harden the code to ensure it meets forensic or professional standards. The result is always a defensible, high-signal report.
+**Independent IT Support Specialist**
+*Eugene, OR (2020–2025)*
+Built a localized support business entirely through word-of-mouth referrals. I handled the hardware and OS failures that standard helpdesks escalate.
+* Managed bare-metal data recovery and deep registry editing for compromised machines.
+* Executed aggressive malware remediation on heavily infected residential and small office systems.
+* Configured local networks, routers, and custom Linux environments.
 
 ---
 
@@ -36,30 +40,18 @@ My approach to AI is pragmatic. I use it to generate boilerplate or scaffold com
 **[adtech-forensics-engine](https://github.com/ghosthermes/adtech-forensics-engine)**  
 *Playwright • Python • Forensic Verification*
 
-I built this litigation-grade automation tool to support privacy compliance testing and ad-tech forensics. It was designed for a high-stakes legal environment where accuracy is the only metric that matters.
+Litigation-grade automation built for privacy compliance testing. I engineered this in under 48 hours to meet a strict legal deadline. The goal was catching "stealth" ad-tech tracking that violates wiretap laws.
 
-*   **Evidentiary Integrity:** Captures HAR files with hash verification and UTC-synchronized timestamps.
-*   **Aggressive Probe Logic:** Triggers `blur` event listeners and other "stealth" tracking triggers used by modern ad-tech.
-*   **Consent Mapping:** Compares OneTrust/Optanon initialization states against actual tracker firing times to catch "consent-less" tracking.
-*   **Data Deobfuscation:** Automatically decodes Base64 and JSON payloads in cross-site sync data (Prebid/DFP).
+* **Evidentiary Integrity:** Captures HAR files with hash verification and UTC-synchronized timestamps.
+* **Aggressive Probe Logic:** Triggers `blur` event listeners used by modern trackers to evade basic scanners.
+* **Consent Mapping:** Compares OneTrust/Optanon initialization states against actual tracker firing times to prove consent-less data exfiltration.
 
-I developed this engine in under 48 hours to meet a specific legal deadline. It demonstrates my ability to pivot into niche technical requirements, leverage AI to compress development cycles, and deliver an artifact that holds up under adversarial scrutiny.
-
----
-
-### Training & Competencies
-
-*   **HTB Academy:** Web Attacks, JS Deobfuscation.
-*   **Bugcrowd University:** API Hacking.
-*   **Focus:** Three years of testing authentication flows, broken access control, and API business logic.
-*   **CTF:** Active participant in HTB 2025 and similar events.
+This project represents my core workflow. I took a niche legal requirement, leveraged AI to compress the development cycle, and delivered a production-ready QA tool that holds up under adversarial scrutiny.
 
 ---
 
-### Professional Engagements
+### Technical Tooling
 
-I am available for contract pentesting (1099), security assessments, and custom tool development. I don't excel in standard corporate panel interviews. I excel when given a scope and a deadline. 
-
-If you need a custom test harness, a forensic capture engine, or a deep-dive assessment of a "secure" API, let's talk.
-
-*All findings mentioned are redacted per NDA. The bugs were real.*
+* **Languages:** Python, Bash. Strong architectural reading comprehension in Rust and JavaScript.
+* **Environments:** Arch Linux, Windows Server, terminal-first workflows.
+* **Security & QA:** Burp Suite, Playwright, custom automated test harnesses.
