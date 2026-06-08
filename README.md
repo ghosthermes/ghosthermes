@@ -1,4 +1,4 @@
-# Ghost Hermes (Legal Name Raven Fritz)
+# Raven Fritz
 **Technical Generalist & QA Automation**
 Eugene, OR (Remote) | [Bugcrowd](https://bugcrowd.com/h/Liz_Zelda) | ravenfritz98@gmail.com
 
