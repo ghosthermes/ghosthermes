@@ -6,7 +6,7 @@ Portland, OR (Remote) | [Bugcrowd](https://bugcrowd.com/h/Liz_Zelda) | ravenfrit
 
 **I investigate production failures and build the tools to fix them.**
 
-I specialize in rapid prototyping and technical investigation. I use AI-assisted workflows to accelerate implementation, then manually harden systems for reliability and verify the logic. When an API breaks or a deployment crashes, I trace failures to their source and engineer practical fixes.
+I specialize in rapid prototyping and technical investigation. I use AI-assisted workflows to accelerate implementation, then manually verify, test, and harden systems for reliability. When an API breaks or a deployment crashes, I trace failures to their source and engineer practical fixes.
 
 ### What I Do
 
