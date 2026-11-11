@@ -18,9 +18,6 @@ BLR is an independent research initiative. We engineer pipelines that bridge the
 *   Engineering custom orchestration frameworks for autonomous security testing (Recon → Attack → Triage).
 *   Focused on API authorization, access control, and deep attack-surface mapping.
 
-### Platforms
-- Bugcrowd: `[(https://bugcrowd.com/h/ravenfritz98)]`
-- HackerOne: `[https://hackerone.com/ghosthermes]`
 
 ---
 *Observe systematically. Validate deterministically.*
